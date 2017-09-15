@@ -35,3 +35,7 @@ I thought it would be nice to have a configuration utility for conky on macOS, t
 ## Should mention
 
 that I took ideas and help from this [site](http://elatov.github.io/2016/01/playing-around-with-conky-on-gentoo/)
+
+## How well does it work?
+
+It works (surprisingly) quite well. I will upload video soon! :)
