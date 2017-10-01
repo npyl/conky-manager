@@ -38,4 +38,4 @@ that I took ideas and help from this [site](http://elatov.github.io/2016/01/play
 
 ## How well does it work?
 
-It works (surprisingly) quite well. I will upload video soon! :)
+Check it for yourself: [vid](https://www.youtube.com/watch?v=l3tIiDdnC68)
