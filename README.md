@@ -20,7 +20,7 @@ I thought it would be nice to have a configuration utility for conky on macOS, t
 - Then, navigate to project directory and go into 'src'
 - Open the makefile and edit the line that says: `prefix=/usr` to `prefix=/usr/local/conky-manager`
 - Execute the commands: `sudo mkdir /usr/local/conky-manager`, `sudo chown root:wheel /usr/local/conky-manager`
-- then `cd ..` and `make` and `make install`  ( You will need sudo for the last two! )
+- then `cd ..` and `make` and `cd src && make install`  ( You will need sudo for the last two! )
 - then last thing, fix some things manually:
 	- navigate to project directory/src/share/conky-manager/images/ and copy everything to /usr/share/conky-manager/images .  ( Note the directory 'images' may not exist, you should create it)
 	- navigate again to project directory/src/share/conky-manager/themepacks and copy the file to /usr/share/conky-manager/themepacks
