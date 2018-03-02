@@ -16,7 +16,7 @@ I thought it would be nice to have a configuration utility for conky on macOS, t
 
 ## How to build & install
 
-- First, install the following packages: `brew install vala libgee gtk+3 json-glib imagemagick`
+- First, install the following packages: `brew install vala libgee gtk+3 json-glib imagemagick p7zip`
 - Then, navigate to project directory and go into 'src'
 - Open the makefile and edit the line that says: `prefix=/usr` to `prefix=/usr/local/conky-manager`
 - Execute the commands: `sudo mkdir /usr/local/conky-manager`, `sudo chown root:wheel /usr/local/conky-manager`
