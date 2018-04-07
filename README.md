@@ -18,13 +18,11 @@ I thought it would be nice to have a configuration utility for conky on macOS, t
 
 - First, install the following packages: `brew install vala libgee gtk+3 json-glib imagemagick p7zip`
 - Then, navigate to project directory and go into 'src'
-- Open the makefile and edit the line that says: `prefix=/usr` to `prefix=/usr/local/conky-manager`
-- Execute the commands: `sudo mkdir /usr/local/conky-manager`, `sudo chown root:wheel /usr/local/conky-manager`
-- then `cd ..` and `make` and `cd src && make install`  ( You will need sudo for the last two! )
+- Open the makefile and edit the line that says: `prefix=/usr` to `prefix=/usr/local/opt/conky-manager`
+- then `cd ..` and `make` and `cd src && make install`
 - then last thing, fix some things manually:
-	- navigate to project directory/src/share/conky-manager/images/ and copy everything to /usr/share/conky-manager/images .  ( Note the directory 'images' may not exist, you should create it)
-	- navigate again to project directory/src/share/conky-manager/themepacks and copy the file to /usr/share/conky-manager/themepacks
-	- then type on terminal: `sudo nano /bin/pidof` and inside nano copy-paste the lines:
+	- type on terminal `ln -s /usr/local/opt/conky-manager/bin/conky-manager /usr/local/bin/conky-manager`
+	- then type: `sudo nano /bin/pidof` and inside nano copy-paste the lines:
 		`#!/bin/sh`
 		
 		`ps axc|awk "{if (\$5==\"$1\") print \$1}";`
