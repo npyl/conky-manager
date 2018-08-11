@@ -2,7 +2,7 @@
 Conky Manager
 =======================
 
-Simple tool for managing Conky configs.
+Simple tool for managing Conky configs.  For a native macOS alternative checkout [ManageConky](https://github.com/Conky-for-macOS/Manage-Conky).  Trust me, its good.
 
 
 macOS Port
